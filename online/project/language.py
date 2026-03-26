@@ -103,7 +103,6 @@ def english(city, data, unit, lang) -> None:
 def print_weather_by_lang(city, data, unit, lang):
     lang_map = {'ru': russian, 'ua': ukrainian}
     printer = lang_map.get(lang, english) 
-    # если нету lang, поумолчанию - en
     printer(city, data, unit, lang)
 
 def print_forecast_ru(forecast) -> None:

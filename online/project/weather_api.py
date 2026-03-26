@@ -4,7 +4,7 @@ from project.utils import (
     get_lang_from_params, 
     get_unit_from_params,
     
-    )
+)
 from project.language import (
     print_weather_by_lang, 
     print_forecast_ru, 
@@ -12,7 +12,7 @@ from project.language import (
     print_forecast_en, 
     print_forecast_by_lang,
     
-    )
+)
 
 def build_weather_request(
         appid_key: str,
