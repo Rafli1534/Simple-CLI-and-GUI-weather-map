@@ -3,7 +3,6 @@ from project.utils import (
     get_city_from_params, 
     get_lang_from_params, 
     get_unit_from_params,
-    
 )
 from project.language import (
     print_weather_by_lang, 
@@ -11,7 +10,6 @@ from project.language import (
     print_forecast_ua, 
     print_forecast_en, 
     print_forecast_by_lang,
-    
 )
 
 def build_weather_request(
@@ -143,7 +141,7 @@ def parse_forecast(resp) -> dict:
 def do_current(url_params_pair):
     url, params = url_params_pair
     resp = fetch_weather(url, params)
-    data = resp.json()
+    data = parse_weather(resp)
     city = get_city_from_params(params)
     unit = get_unit_from_params(params)
     lang = get_lang_from_params(params)

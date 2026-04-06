@@ -34,6 +34,8 @@ def wind_direction(deg: float, lang: str = 'en') -> str:
             'North-West',
         
         ]
+    if deg is None:
+        return 'Unknown'
     ix = int((deg + 22.5) // 45) % 8
     return dirs[ix]
 

@@ -1,5 +1,7 @@
-from project.utils import run_cli
-from project.gui import run_gui
+from project.starts import (
+    run_cli, 
+    run_gui
+)
 
 def main_action():
     mode = input("Choose mode:\n1. CLI\n2. GUI\nUr choice: ").strip()

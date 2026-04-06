@@ -220,11 +220,6 @@ class WeatherAppGUI:
     def run(self):
         self.root.mainloop()
 
-def run_gui():
-    root = tk.Tk()
-    app = WeatherAppGUI(root)
-    app.run()
-
 def choose_mode_gui():
         choice = {}
         splash = tk.Tk()
