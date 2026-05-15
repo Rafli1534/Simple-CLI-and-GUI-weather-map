@@ -2,20 +2,20 @@ import tkinter as tk
 from project.gui import WeatherAppGUI
 from project.weather_api import (
     run_forecast,
-    run_current
+    run_current,
 )
 from project.utils import (
-    hello,
+    greet,
     appid,
     get_city,
     choose_units,
     choose_language,
-    choose_mode_cli
+    choose_mode_cli,
 )
 
 def run_cli():
     """Function that runs CLI mode of program"""
-    hello()
+    greet()
     ad = appid()
     city = get_city()
     units = choose_units()
@@ -49,3 +49,4 @@ def run_gui():
     root = tk.Tk()
     app = WeatherAppGUI(root)
     app.run()
+    

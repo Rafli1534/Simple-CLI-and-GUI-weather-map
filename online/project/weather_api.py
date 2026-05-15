@@ -74,7 +74,6 @@ def error(resp) -> bool:
 
 def parse_weather(resp) -> dict:
     data = resp.json() if resp is not None else {} 
-    #{} - защита от ошибки
     main = data.get('main') or {}
     system = data.get('sys') or {}
     wind = data.get('wind') or {}

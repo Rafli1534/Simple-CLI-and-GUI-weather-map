@@ -1,16 +1,17 @@
-def hello() -> None:
-    print("Hello my dear user! If you want to see the weather,\n" \
-    "would u so please to write ur APPID key from urs " \
-    "OpenWeather account!\n\n" \
-    "but if u don't have it, u can sign in, and then write " \
-    "it here!\n" \
-    "Don't worry, u don't have to search this site. Here it is!\n" \
-    "After writing it, u can successfuly use this project!\n" \
-    "https://home.openweathermap.org/users/sign_in \n" \
-    "Enjoy your time!")
+def greet() -> None:
+    print("Hello my dear user! If you want to see the weather,")
+    print("would u so please to write ur APPID key from urs ")
+    print("OpenWeather account!")
+    print()
+    print("but if u don't have it, u can sign in, and then write it here!")
+    print("Don't worry, u don't have to search this site. Here it is!")
+    print("After writing it, u can successfuly use this project!")
+    print("https://home.openweathermap.org/users/sign_in")
+    print("Enjoy your time!")
 
 def appid() -> str:
-    """Prompt for OpenWeather APPID and require exactly 32 
+    """
+    Prompt for OpenWeather APPID and require exactly 32 
     characters.
 
     Keeps prompting until the user provides a 32-character key,
